@@ -51,7 +51,7 @@ class ProductGridScreen extends StatelessWidget {
             crossAxisCount: 2,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
-            childAspectRatio: 0.68, // proporção mais equilibrada
+            childAspectRatio: 0.68, 
           ),
           itemBuilder: (context, index) {
             final produto = produtos[index];

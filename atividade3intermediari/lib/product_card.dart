@@ -33,7 +33,6 @@ class ProductCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Imagem com tag de desconto
           Stack(
             children: [
               ClipRRect(
@@ -43,7 +42,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 child: Image.network(
                   imageUrl,
-                  height: 100, // altura reduzida para melhor balanceamento
+                  height: 100, 
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
@@ -73,7 +72,6 @@ class ProductCard extends StatelessWidget {
             ],
           ),
 
-          // Espaço do nome e preço do produto
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(

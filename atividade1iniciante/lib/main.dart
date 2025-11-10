@@ -43,7 +43,7 @@ class UserProfileScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Foto do perfil
+
               const CircleAvatar(
                 radius: 60,
                 backgroundImage: AssetImage('assets/perfil.jpg'),
@@ -51,13 +51,11 @@ class UserProfileScreen extends StatelessWidget {
 
               const SizedBox(height: 16),
 
-              // Nome do usuário
               const Text(
                 'Danilo Lopes',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
 
-              // Username
               const Text(
                 '@dani.lolopes',
                 style: TextStyle(fontSize: 16, color: Colors.grey),
@@ -65,10 +63,9 @@ class UserProfileScreen extends StatelessWidget {
 
               const SizedBox(height: 24),
 
-              // Estatísticas
               Row(
                 children: [
-                  // Posts
+
                   Expanded(
                     child: Column(
                       children: const [
@@ -84,7 +81,6 @@ class UserProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // Seguidores
                   Expanded(
                     child: Column(
                       children: const [
@@ -103,7 +99,6 @@ class UserProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // Seguindo
                   Expanded(
                     child: Column(
                       children: const [
@@ -123,12 +118,11 @@ class UserProfileScreen extends StatelessWidget {
 
               const SizedBox(height: 40),
 
-              // Botão "Editar Perfil"
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Ação para editar o perfil
+
                   },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
